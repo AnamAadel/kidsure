@@ -2,6 +2,20 @@ $(document).ready(function(){
     
 })
 
+// navbar menu show & hide
+
+const navbar_collapse = document.querySelector('.navbar-collapse');
+const nav_link = document.querySelectorAll('.nav_link');
+
+for(item of nav_link){
+  item.addEventListener("click",function(){
+    navbar_collapse.classList.remove('show');
+  })
+}
+
+
+
+
 const navbar = document.querySelector('.navbar');
 const contact_link = document.querySelector('.contact_link');
 
